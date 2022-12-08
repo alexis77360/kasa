@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-top: 20px;
+    padding: 20px 20px;
+    margin-top: 20px
+    
+
+}
+
+.navbar__img {
+    height: 4rem;
+    width: 15rem;
+
+
+    
+}
+
+.navbar__links {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    font-size: 10px;
+    color: #ff6060;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+
+
+}
