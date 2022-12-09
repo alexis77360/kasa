@@ -1,0 +1,14 @@
+.home__gallery{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 25px;
+    background-color: #F7F7F7;
+    margin-bottom: 4rem;
+
+
+}
