@@ -1,17 +1,25 @@
-footer{
-    background: #000000;
-    color: white;
-  padding-top: 60px;
-    padding-bottom: 20px;
-    text-align: center;
-    
-
+footer {
+	background: #000000;
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	text-align: center;
 }
-.footer__logo{
-    width: 8rem;
-    margin-bottom: 20px;
+.footer__logo {
+	width: 8rem;
+	margin-bottom: 20px;
 }
-.footer__text{
-    font-size: 1.5rem;
+.footer__text {
+	font-size: 1.5rem;
+}
 
+/* //!Responsive */
+
+@media screen and (max-width: 900px) {
+	.footer__logo {
+		width: 6rem;
+	}
+	.footer__text {
+		font-size: 1.2rem;
+	}
 }

@@ -1,40 +1,55 @@
-.homeBanner{
-  height: 16rem;
-  position: relative;
-  
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
-
+.homeBanner {
+	height: 16rem;
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
 }
 
-.homeBanner__img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.homeBanner__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-.homeBanner__overlay{
-  position: absolute;
-  background: black;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  opacity: 0.3;
-
+.homeBanner__overlay {
+	position: absolute;
+	background: black;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	opacity: 0.3;
 }
 
-.homeBanner__title{
-  position: absolute;
-    justify-items: center;
-    align-self: center;
-    font-size: 50px;
-    font-weight: 300;
-    padding: 20%;
-    color: white;
-  
+.homeBanner__title {
+	position: absolute;
+	justify-items: center;
+	align-self: center;
+	font-size: 3.5rem;
+	font-weight: 300;
+	padding: 20%;
+	color: white;
+}
 
+/* //! Responsive */
+
+@media screen and (max-width: 900px) {
+	.homeBanner {
+		height: 10rem;
+	}
+	.homeBanner__title {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.homeBanner {
+		height: 8rem;
+	}
+	.homeBanner__title {
+		font-size: 1.2rem;
+	}
 }

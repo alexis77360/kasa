@@ -8,7 +8,27 @@
     margin-right: 2%;
     border-radius: 25px;
     background-color: #F7F7F7;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
 
 
+}
+
+/* //! Responsive */
+
+@media screen and (max-width: 900px) {
+    .home__gallery{
+        display: block;
+        margin-top: 0rem;
+        padding-top: 1.5rem;
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .home__gallery{
+        margin-top: 0rem;
+        padding-top: 1.5rem;
+        background-color: #fff;
+    }
 }
