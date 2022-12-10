@@ -1,0 +1,45 @@
+.error {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: center;
+	color: #ff6060;
+}
+.error__logo {
+	height: 16.5rem;
+	margin-top: 11rem;
+	margin-bottom: 5rem;
+}
+.error__text {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+.error__home {
+	margin-bottom: 8rem;
+	margin-top: 11rem;
+	font-weight: 500;
+}
+.error__home:hover {
+	text-decoration: underline;
+}
+
+/*//! Responsive */
+
+@media screen and (max-width: 900px) {
+	.error__logo {
+		height: 12rem;
+		margin-top: 8rem;
+		margin-bottom: 0rem;
+	}
+	.error__text {
+		font-size: 1.2rem;
+
+		margin-top: 2rem;
+	}
+	.error__home {
+		margin-bottom: 5rem;
+		margin-top: 8rem;
+	}
+}

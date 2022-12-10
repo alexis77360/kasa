@@ -10,6 +10,14 @@
 }
 
 .homeBanner__img {
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.homeBannerMob__img {
+	display: none;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -42,6 +50,14 @@
 	}
 	.homeBanner__title {
 		font-size: 1.5rem;
+	}
+	.homeBanner__img {
+		display: none;
+	}
+	.homeBannerMob__img {
+		display: block;
+		object-fit: cover;
+		
 	}
 }
 
