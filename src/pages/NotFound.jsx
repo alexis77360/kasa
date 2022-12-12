@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/NotFound.css";
 
 const NotFound = () => {
@@ -11,7 +12,9 @@ const NotFound = () => {
 				Oups! La page que vous demandez n'existe pas.
 			</h2>
 
+			<Link to="/" style={{ textDecoration: 'none' }}>
 			<p className="error__home">Retourner sur la page d'accueil</p>
+			</Link>
 		</div>
 	);
 };

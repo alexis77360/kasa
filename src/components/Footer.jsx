@@ -1,9 +1,12 @@
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="footer__container">
+
+				<Link to="/"> 
 				<svg
 					className="footer__logo"
 					viewBox="0 0 211 68"
@@ -31,6 +34,7 @@ const Footer = () => {
 						fill="white"
 					/>
 				</svg>
+				</Link>
 
 				<p className="footer__text">© 2022 Kasa. All rights reserved</p>
 			</div>

@@ -38,7 +38,7 @@
 
 /* //!Responsive */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
     .gallery {
         width: 100%;
         margin-left: 0;

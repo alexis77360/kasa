@@ -5,6 +5,12 @@
 	padding-top: 20px;
 	padding: 20px 20px;
 	margin-top: 20px;
+
+	max-width: 1440px;
+	margin-top: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
 }
 
 .navbar__img {
@@ -12,7 +18,7 @@
 	width: 15rem;
 }
 
-.navbar__links {
+.navbar__links__wrapper {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -26,9 +32,10 @@
 	font-size: 1.5rem;
 	font-weight: 600;
 	line-height: 2rem;
-	margin-right: 25px;
+	margin-left: 4rem;
+	text-decoration: none;
 }
-.navbar__links__style:hover {
+.navbar__links__style:focus {
 	text-decoration: underline;
 }
 
@@ -45,7 +52,8 @@
 	.navbar__links__style {
 		font-size: 1.2rem;
 		line-height: 1.5rem;
-		margin-right: 15px;
+		margin-left: 1rem;
+
 	}
 	.navbar__img {
 		height: 4rem;

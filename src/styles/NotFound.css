@@ -20,7 +20,9 @@
 	margin-bottom: 8rem;
 	margin-top: 11rem;
 	font-weight: 500;
-}
+	color: red;
+	
+	}
 .error__home:hover {
 	text-decoration: underline;
 }
