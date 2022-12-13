@@ -6,7 +6,6 @@ import About from "../pages/About";
 import Apartment from "../pages/Apartment";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-/*//! Revoir le Css .navbar__links__style:focus dans Navigation CSS */
 
 function App() {
 	return (

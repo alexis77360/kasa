@@ -32,11 +32,12 @@ const Slider = ({ images }) => {
 					onClick={prevPagination}
 					className="slider__arrow fas fa-chevron-up"
 				></i>
+				<img className="slider__img" src={images[pagination]} alt="" />
+				<div className="slider__count">
+					
+					{pagination + 1}/{images.length}
+				</div>
 
-				
-					<img className="slider__img" src={images[pagination]} alt="" />
-					<div className="slider__count"> {pagination+1}/{images.length} </div>
-				
 				<i
 					onClick={nextPagination}
 					className="slider__arrow right fas fa-chevron-up"

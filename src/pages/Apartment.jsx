@@ -7,7 +7,6 @@ const Apartment = () => {
 
 	//? On récupère l'id de l'appartement dans l'url et on le compare à l'id de l'appartement dans le tableau d'appartements
 	const logement = apart.find((apart) => apart.id === apartmentId);
-	console.log(logement.pictures);
 
 	return (
 		<main className="main">
