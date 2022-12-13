@@ -11,8 +11,8 @@ function Navigation() {
 			</Link>
 
 			<div className="navbar__links__wrapper">
-				<Link to="/" className="navbar__links__style">Accueil</Link>
-				<Link to="/about" className="navbar__links__style">A Propos</Link>
+				<Link to="/" className="navbar__links">Accueil</Link>
+				<Link to="/about" className="navbar__links">A Propos</Link>
 
 			</div>
 		</nav>

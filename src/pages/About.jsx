@@ -24,12 +24,12 @@ const aboutData = [
 
 const About = () => {
 	return (
-		<div className="main">
+		<main className="main">
 			<HomeBanner image={montagne} imagemob={montagneMob}></HomeBanner>
 			{aboutData.map(({ title, text }) => (
 				<Dropdown key={`about-${title}`} titre={title} texte={[text]} />
 			))}{" "}
-		</div>
+		</main>
 	);
 };
 

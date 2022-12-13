@@ -3,6 +3,7 @@ import NotFound from "../pages/NotFound";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import About from "../pages/About";
+import Apartment from "../pages/Apartment";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 /*//! Revoir le Css .navbar__links__style:focus dans Navigation CSS */
@@ -16,6 +17,8 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="*" element={<NotFound />} />
 					<Route path="/about" element={<About />} />
+					<Route path="apartment/:apartmentId" element={<Apartment />} />
+
 				</Routes>
 				<Footer />
 			</Router>

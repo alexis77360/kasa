@@ -27,7 +27,7 @@
 	justify-content: end;
 }
 
-.navbar__links__style {
+.navbar__links {
 	color: #ff6060;
 	font-size: 1.5rem;
 	font-weight: 600;
@@ -35,7 +35,7 @@
 	margin-left: 4rem;
 	text-decoration: none;
 }
-.navbar__links__style:focus {
+.navbar__links:focus {
 	text-decoration: underline;
 }
 
@@ -45,15 +45,12 @@
 	.navbar {
 		padding: 0px 20px;
 	}
-	.navbar__links {
-		margin-top: 5px;
-	}
 
-	.navbar__links__style {
+	.navbar__links {
 		font-size: 1.2rem;
 		line-height: 1.5rem;
 		margin-left: 1rem;
-
+		margin-bottom: 5px;
 	}
 	.navbar__img {
 		height: 4rem;
@@ -71,7 +68,7 @@
 		margin-top: 0px;
 	}
 
-	.navbar__links__style {
+	.navbar__links {
 		font-size: 1rem;
 	}
 }
