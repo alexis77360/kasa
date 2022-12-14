@@ -1,19 +1,34 @@
 import logo from "../assets/logo.svg";
 import "../styles/Navigation.css";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navigation() {
 	return (
 		<nav className="navbar">
 			<Link to="/">
-			<img src={logo} alt="Logo" className="navbar__img" />
+				<img src={logo} alt="Logo" className="navbar__img" />
 			</Link>
 
 			<div className="navbar__links__wrapper">
-				<Link to="/" className="navbar__links">Accueil</Link>
-				<Link to="/about" className="navbar__links">A Propos</Link>
-
+				<NavLink
+					to="/"
+					style={({ isActive }) =>
+						isActive ? { textDecoration: "underline" } : undefined
+					}
+					className="navbar__links"
+				>
+					Accueil
+				</NavLink>
+				<NavLink
+					to="/about"
+					style={({ isActive }) =>
+						isActive ? { textDecoration: "underline" } : undefined
+					}
+					className="navbar__links"
+				>
+					A Propos
+				</NavLink>
 			</div>
 		</nav>
 	);

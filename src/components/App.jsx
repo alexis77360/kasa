@@ -7,6 +7,7 @@ import Apartment from "../pages/Apartment";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
+
 function App() {
 	return (
 		<div className="App">
@@ -17,7 +18,6 @@ function App() {
 					<Route path="*" element={<NotFound />} />
 					<Route path="/about" element={<About />} />
 					<Route path="apartment/:apartmentId" element={<Apartment />} />
-
 				</Routes>
 				<Footer />
 			</Router>
