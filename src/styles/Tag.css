@@ -6,10 +6,29 @@
     font-weight: 500;
     padding: 0px 2.5rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 
 }
 
 .tag__text{
     font-size: 1rem;
     line-height: 0;
+}
+
+/* //!Responsive */
+
+@media screen and (max-width: 950px) {
+    .tag{
+        margin-right: 0.5;
+        margin-bottom: 0.5rem;
+        padding: 0px 1.5rem;
+        font-size: 0.8rem;
+
+        
+    }
+    .tag__text{
+        font-size: 0.8rem;
+        line-height: 0;
+     
+    }
 }

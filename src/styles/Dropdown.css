@@ -1,10 +1,7 @@
 .dropdown {
-
 	margin-top: 3rem;
-	margin-bottom: 3rem;
 	background-color: #f7f7f7;
 	overflow: hidden;
-	
 	height: 4rem;
 }
 .dropdown__title {
