@@ -1,11 +1,10 @@
 .dropdown {
-	width: 80%;
+
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	background-color: #f7f7f7;
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
+	
 	height: 4rem;
 }
 .dropdown__title {
@@ -16,7 +15,6 @@
 
 .dropdown__text {
 	height: 100%;
-	padding-top: 1rem;
 	color: #ff6060;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -24,7 +22,9 @@
 	text-align: left;
 	margin-left: 1rem;
 	margin-right: 0.5rem;
+	
 }
+
 .dropdown__arrow {
 	transform: rotate(180deg);
 	font-size: 1.5rem;

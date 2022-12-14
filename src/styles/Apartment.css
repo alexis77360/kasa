@@ -1,0 +1,37 @@
+.apartment__container {
+    margin-left: 2%;
+
+
+}
+.apartment__title{
+    font-size: 2.25rem; 
+    font-weight: 600;
+    color: #ff6060;
+
+}
+.apartment__location{
+    font-size: 1.25rem;
+    line-height: 0;
+    font-weight: 600;
+    color: #ff6060;
+}
+.apartment__tags{
+    margin-top: 3rem;
+
+
+}
+
+.apartment__dropdown__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-bottom: 3rem;
+}
+
+.apartment__dropdown{
+    width: 45%;
+    height: 100%;
+
+}
+
+

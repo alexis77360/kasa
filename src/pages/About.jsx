@@ -2,6 +2,7 @@ import HomeBanner from "../components/HomeBanner";
 import montagne from "../assets/montagne.png";
 import montagneMob from "../assets/montagne_mob.png";
 import Dropdown from "../components/Dropdown";
+import "../styles/About.css";
 
 const aboutData = [
 	{
@@ -25,10 +26,13 @@ const aboutData = [
 const About = () => {
 	return (
 		<main className="main">
+			
 			<HomeBanner image={montagne} imagemob={montagneMob}></HomeBanner>
+			<div className="about">
 			{aboutData.map(({ title, text }) => (
 				<Dropdown key={`about-${title}`} titre={title} texte={[text]} />
 			))}{" "}
+		</div>
 		</main>
 	);
 };

@@ -27,10 +27,28 @@ const Dropdown = ({ titre, texte }) => {
 					onClick={DropDownOpen}
 					className="dropdown__arrow fas fa-chevron-up"
 				></i>
-			</button>
-			<div className="tes">
-				<p className="dropdown__text">{texte}</p>
-			</div>
+			</button>	
+
+			{Array.isArray(texte) ? (
+				<ul className="dropdown__text">
+				{texte.map((item, index) => (
+					<li key={index} className="dropdown__item">
+						{item}
+					</li>
+				))}
+			</ul>
+			)
+				:
+				(
+					<p className="dropdown__text">{texte}</p>
+					
+
+				)
+				
+				}
+			
+				
+			
 		</div>
 	);
 };
