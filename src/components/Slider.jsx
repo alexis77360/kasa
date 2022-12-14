@@ -25,23 +25,33 @@ const Slider = ({ images }) => {
 		}
 	};
 
+	//?On affiche les flèches de navigation que si le tableau d'images contient plus d'une image
+	const arrowShow = () => {
+		if (images.length > 1) {
+			return (
+				<div>
+					<i
+						onClick={prevPagination}
+						className="slider__arrow fas fa-chevron-up"
+					></i>
+					<i
+						onClick={nextPagination}
+						className="slider__arrow right fas fa-chevron-up"
+					></i>
+				</div>
+			);
+		}
+	};
+
 	return (
 		<div className="slider">
 			<div className="slider__container">
-				<i
-					onClick={prevPagination}
-					className="slider__arrow fas fa-chevron-up"
-				></i>
+				{arrowShow()}
+
 				<img className="slider__img" src={images[pagination]} alt="" />
 				<div className="slider__count">
-					
 					{pagination + 1}/{images.length}
 				</div>
-
-				<i
-					onClick={nextPagination}
-					className="slider__arrow right fas fa-chevron-up"
-				></i>
 			</div>
 		</div>
 	);
