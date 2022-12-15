@@ -6,6 +6,7 @@ import Tag from "../components/Tag";
 import "../styles/Apartment.css";
 import redStar from "../assets/red_star.png";
 import greyStar from "../assets/grey_star.png";
+import NotFound from "./NotFound";
 
 const Apartment = () => {
 	const { apartmentId } = useParams();
@@ -13,10 +14,11 @@ const Apartment = () => {
 	//? On récupère l'id de l'appartement dans l'url et on le compare à l'id de l'appartement dans le tableau d'appartements
 	const logement = apart.find((apart) => apart.id === apartmentId);
 
+	//? Si l'appartement n'existe pas, on affiche la page 404
+	if (!logement) return <NotFound />;
 
 	const stars = [1, 2, 3, 4, 5];
 	const rating = logement.rating;
-
 
 	return (
 		<main className="main">
@@ -37,26 +39,26 @@ const Apartment = () => {
 						<div className="apartment__info">
 							<div className="apartment__avatar">
 								<p className="apartment__name">{logement.host.name}</p>
-								<img className="apartment__image" src={logement.host.picture} alt="avatar" />
+								<img
+									className="apartment__image"
+									src={logement.host.picture}
+									alt="avatar"
+								/>
 							</div>
-						
-						<div className="apartment__rating">
-							{stars.map((star, index) => {
-								return (
-									<img
 
-										key={index}
-										className="apartment__rating__star"
-										src
-										={index < rating ? redStar : greyStar}
-										alt="star"
-									/>
-								);
-							})}
+							<div className="apartment__rating">
+								{stars.map((star, index) => {
+									return (
+										<img
+											key={index}
+											className="apartment__rating__star"
+											src={index < rating ? redStar : greyStar}
+											alt="star"
+										/>
+									);
+								})}
+							</div>
 						</div>
-						
-						</div>
-
 					</div>
 				</div>
 
@@ -65,7 +67,7 @@ const Apartment = () => {
 						<Dropdown titre="Description" texte={logement.description} />
 					</div>
 					<div className="apartment__dropdown">
-						<Dropdown titre="Equipements" texte={logement.equipments} />
+						<Dropdown titre="Équipements" texte={logement.equipments} />
 					</div>
 				</div>
 			</div>

@@ -4,6 +4,7 @@ import montagneMob from "../assets/montagne_mob.png";
 import Dropdown from "../components/Dropdown";
 import "../styles/About.css";
 
+//? On crée un tableau d'objets qui contient les informations de chaque section
 const aboutData = [
 	{
 		title: "Fiabilité",
@@ -23,6 +24,7 @@ const aboutData = [
 	},
 ];
 
+//? on affiche le composant HomeBanner avec les images en background et on map sur le tableau d'objets pour afficher les sections
 const About = () => {
 	return (
 		<main className="main">

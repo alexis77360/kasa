@@ -1,7 +1,5 @@
 import "../styles/HomeBanner.css";
 
-
-//? Affiche une image en fond d'écran avec un texte au dessus (utilisé pour la page d'accueil et la page à propos)
 //? Props: image (image de fond), imagemob (image de fond pour mobile), texte (texte à afficher)
 const HomeBanner = ({image,imagemob,texte}) => {
 	return (

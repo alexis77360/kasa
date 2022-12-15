@@ -1,7 +1,6 @@
 import "../styles/Dropdown.css";
 
 const Dropdown = ({ titre, texte }) => {
-
 	const DropDownOpen = (e) => {
 		//? Fonction qui ajoute les classes pour dérouler le dropdown
 		const addClass = () => {
@@ -18,37 +17,28 @@ const Dropdown = ({ titre, texte }) => {
 		wait();
 	};
 
+	//? Si le texte est un tableau, on affiche une liste, sinon on affiche un paragraphe
 	return (
 		<div className="dropdown">
 			<button type="button" className="dropdown__button">
 				<h2 className="dropdown__title">{titre}</h2>
-
 				<i
 					onClick={DropDownOpen}
 					className="dropdown__arrow fas fa-chevron-up"
 				></i>
-			</button>	
+			</button>
 
 			{Array.isArray(texte) ? (
 				<ul className="dropdown__text">
-				{texte.map((item, index) => (
-					<li key={index} className="dropdown__item">
-						{item}
-					</li>
-				))}
-			</ul>
-			)
-				:
-				(
-					<p className="dropdown__text">{texte}</p>
-					
-
-				)
-				
-				}
-			
-				
-			
+					{texte.map((item, index) => (
+						<li key={index} className="dropdown__item">
+							{item}
+						</li>
+					))}
+				</ul>
+			) : (
+				<p className="dropdown__text">{texte}</p>
+			)}
 		</div>
 	);
 };

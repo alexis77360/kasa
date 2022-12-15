@@ -1,6 +1,7 @@
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
 
+//? On importe le logo et on le rend clickable pour revenir à la page d'accueil
 const Footer = () => {
 	return (
 		<footer className="footer">

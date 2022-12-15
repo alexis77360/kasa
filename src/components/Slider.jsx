@@ -1,6 +1,7 @@
 import "../styles/Slider.css";
 import { useState } from "react";
 
+//? Props: images (tableau d'images)
 const Slider = ({ images }) => {
 	//?On initialise la pagination à 0 pour afficher la première image du tableau d'images
 	const [pagination, setPagination] = useState(0);

@@ -6,8 +6,7 @@ import About from "../pages/About";
 import Apartment from "../pages/Apartment";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
-
+//? On importe les pages et les composants nécessaires à la navigation et au routing de l'application
 function App() {
 	return (
 		<div className="App">

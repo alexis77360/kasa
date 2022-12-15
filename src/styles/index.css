@@ -1,32 +1,23 @@
-body{
-  font-family: 'Montserrat';
-  margin: 0px;
-
-
-  
+body {
+	font-family: "Montserrat";
+	margin: 0px;
 }
-ul{
-  list-style-type: none;
-  margin-left: 1rem;
-  padding-left: 1rem;
-
-  
-
+ul {
+	list-style-type: none;
+	margin-left: 1rem;
+	padding-left: 1rem;
 }
 
-  .main{
-  max-width: 1440px;
-  margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-
+.main {
+	max-width: 1440px;
+	margin-top: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
 }
 
-@media screen and (max-width: 900px)
-{
-  .main{
-    margin-top: 0px;
-  }
+@media screen and (max-width: 900px) {
+	.main {
+		margin-top: 0px;
+	}
 }
-

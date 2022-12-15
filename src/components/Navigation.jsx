@@ -3,6 +3,7 @@ import "../styles/Navigation.css";
 
 import { Link, NavLink } from "react-router-dom";
 
+//? Permets de créer la barre de navigation avec les liens vers les pages d'accueil et à propos.
 function Navigation() {
 	return (
 		<nav className="navbar">

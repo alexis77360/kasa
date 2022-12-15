@@ -1,5 +1,6 @@
 import "../styles/Tag.css";
 
+//? Affichage des tags pour les appartements
 const Tag = ({ tag }) => {
     return (
         <div className="tag">
@@ -7,6 +8,5 @@ const Tag = ({ tag }) => {
         </div>
     );
     }
-
 
 export default Tag;
