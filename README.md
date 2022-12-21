@@ -9,3 +9,5 @@ Il fallait réaliser en utilisant React et React Router :
 3. Page à propos contenant différentes informations sur l'entreprise Kasa
 4. Page d'erreur 404 si la route n'existe pas 
 5. Design responsive 
+
+Version en ligne : https://projet-kasa-alexfav-dev.netlify.app
